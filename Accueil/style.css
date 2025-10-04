@@ -1,0 +1,428 @@
+/*Corps de page*/
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+nav.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* ligne subtile mais visible */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  /* légère ombre moderne */
+  padding: 1.5rem 0;
+  /* navbar plus grande */
+}
+
+/* Logo */
+.logo {
+  height: 80px;
+  /* logo plus visible */
+  width: 80px;
+}
+
+/* Liens */
+.navbar-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Les onglets */
+.nav-link {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333 !important;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Passage de la souris sur un onglet */
+.nav-link:hover {
+  color: rgb(234, 111, 217) !important;
+  transform: translateY(-3px);
+  /* effet flottant */
+}
+
+/* Liens actifs */
+.nav-link.active {
+  color: rgb(234, 111, 217) !important;
+  border-bottom: 1px solid rgb(234, 111, 217) !important;
+  /* souligne bien le lien actif */
+  padding-bottom: 0.2rem;
+}
+
+/* Conteneur des liens pour les centrer */
+.navbar {
+  height: 80px;
+  /* ajuste selon la taille que tu veux */
+}
+
+
+
+
+
+
+/* Header div possédant la div middle */
+.Header-Principal {
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+
+}
+
+/* Header du Milieu possédant le titre et le reste */
+.Header-Middle {
+
+  align-items: center;
+  justify-content: center;
+  /*background-color: red;*/
+  width: 1000px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+/* Petit encadré border radius au dessus du titre*/
+.Phrase-radius {
+
+  font-size: 13px;
+  border-radius: 30px;
+  border: 1px solid rgba(206, 206, 206, 0.431);
+  width: 240px;
+  margin-bottom: 20px;
+  padding: 3px;
+
+}
+
+/* Gros titre */
+.Header-Middle h1 {
+
+  font-weight: bold;
+  color: black;
+  font-size: 50px;
+
+}
+
+/* Petit titre */
+.header-mid-minidesc {
+
+  font-size: 18px;
+  color: #666;
+
+}
+
+/* Div contenant les deux boutons */
+.Boutons-Header {
+  /*background-color: green;*/
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Style général pour les boutons */
+.Bouton-Cours,
+.Bouton-Flashcards {
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 160px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bouton Cours */
+.Bouton-Cours {
+  background: linear-gradient(135deg, #ff7edb, #ff4fc4);
+  color: white;
+  border: none;
+}
+
+.Bouton-Cours:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Bouton Flashcards */
+.Bouton-Flashcards {
+  background: white;
+  color: #333;
+  border: 1px solid rgb(226, 226, 226);
+}
+
+.Bouton-Flashcards:hover {
+  background: linear-gradient(135deg, #a600a6, #e000e0);
+  color: white;
+  border: none;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.contenu-principal {
+
+  background-color: rgb(248, 222, 247);
+  height: 500px;
+}
+
+
+/* Liens actifs */
+.nav-link.inactive {
+
+  color: gray;
+
+}
+
+.nav-link.inactive:hover {
+
+  color: gray !important;
+  cursor: not-allowed;
+  transform: none;
+
+}
+
+
+
+
+
+
+/* Reset + base */
+* {
+  box-sizing: border-box;
+}
+
+
+/* Wrapper */
+.contenu {
+  max-width: 960px;
+  margin: 64px auto;
+  padding: 40px;
+
+}
+
+/* --- Cartes --- */
+.cartes {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 42px;
+}
+
+.carte {
+  background: #fff;
+  flex: 1 1 260px;
+  min-width: 260px;
+  height: 220px;
+  border-radius: 14px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(18, 24, 31, 0.06);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.carte:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(18, 24, 31, 0.08);
+}
+
+.icone {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.carte h3 {
+  margin: 0 0 8px;
+  font-size: 1.08rem;
+}
+
+.carte p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* --- Bloc phrase --- */
+.bloc-phrase {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px 22px;
+  box-shadow: 0 6px 18px rgba(18, 24, 31, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+/* Phrase text + transition */
+.phrase h2,
+.phrase p {
+  margin: 0;
+  transition: opacity .18s ease, transform .18s ease;
+}
+
+.phrase h2 {
+  font-size: 1.6rem;
+}
+
+.phrase p {
+  color: #666;
+  margin-top: 6px;
+  font-size: 0.95rem;
+}
+
+/* classe utilisée par JS pour fade out */
+.invisible {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+/* Bouton */
+#btn-nouvelle {
+  background: #fafafa;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: transform .12s ease, background .12s;
+  white-space: nowrap;
+}
+
+#btn-nouvelle:hover {
+  transform: scale(1.03);
+  background: #f5f5f5;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .bloc-phrase {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #btn-nouvelle {
+    align-self: flex-end;
+  }
+}
+
+
+
+
+.conteneur-main {
+
+  background: linear-gradient(180deg, #f8f8f8 0%, #ffe8ff 100%);
+  width: 100%;
+  height: 600px;
+
+}
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+  background-color: white;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  padding: 40px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+
+  /* 💫 Ligne de séparation douce et ombre subtile */
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.footer-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+}
+
+.footer-content p {
+  margin: 10px 0;
+  font-size: 0.95rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #e06fe0;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 15px;
+}
+
+.footer-header {
+  display: flex;
+  align-items: center;
+  /* aligne verticalement le logo et le texte */
+  justify-content: center;
+  gap: 12px;
+  /* espace entre le logo et le texte */
+  margin-bottom: 10px;
+}
+
+.footer-title {
+  font-size: 1.3rem;
+  color: #333;
+  margin-top:-17px;
+}
+
+
+.footer-minidesc {
+
+  color: black;
+
+}

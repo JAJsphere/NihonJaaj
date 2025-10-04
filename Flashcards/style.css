@@ -1,0 +1,259 @@
+/*Corps de page*/
+body {
+
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f8f8f8;  
+
+}
+
+
+/* Navbar */
+nav.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0,0,0,0.1); /* ligne subtile mais visible */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* légère ombre moderne */
+  padding: 1.5rem 0; /* navbar plus grande */
+}
+
+/* Logo */
+.logo {
+  height: 80px; /* logo plus visible */
+  width: 80px;
+}
+
+/* Liens */
+.navbar-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Les onglets */
+.nav-link {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333 !important;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Passage de la souris sur un onglet */
+.nav-link:hover {
+  color: rgb(234, 111, 217)!important;
+  transform: translateY(-3px); /* effet flottant */
+}
+
+/* Liens actifs */
+.nav-link.active {
+  color: rgb(234, 111, 217) !important;
+  border-bottom: 1px solid rgb(234, 111, 217)!important; /* souligne bien le lien actif */
+  padding-bottom: 0.2rem;
+}
+    
+/* Conteneur des liens pour les centrer */
+.navbar {
+  height: 80px; /* ajuste selon la taille que tu veux */
+}
+
+
+
+
+
+/* Conteneur principal */
+.selection-flashcards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+  margin-top: 5px; /* espace sous la navbar */
+
+}
+
+/* Style des cartes */
+.choix-card {
+  background: white;
+  width: 300px;
+  height: 320px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Effet hover */
+.choix-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Titres */
+.choix-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Texte */
+.choix-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Carte disponible */
+.choix-card.disponible {
+  border: 2px solid #e06fe0;
+}
+
+/* Lien dans la carte disponible */
+.choix-card.disponible a {
+  display: inline-block;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #a600a6, #e000e0);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Effet hover sur le lien */
+.choix-card.disponible a:hover {
+  background: linear-gradient(135deg, #820082, #b800b8);
+  transform: translateY(-2px);
+}
+/* Coming soon (grisées) */
+.choix-card.coming {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* Liens actifs */
+.nav-link.inactive {
+
+  color:gray;
+
+}
+    
+.nav-link.inactive:hover {
+
+  color:gray !important;
+  cursor:not-allowed; 
+  transform: none;
+}
+
+
+
+.div-titre {
+
+    margin-top:30px;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    text-align: center; 
+    height: 150px;
+    padding-top:30px; 
+
+}
+
+
+.div-titre h2 {
+
+    font-weight: bold;
+
+}
+
+.div-titre p {
+
+  font-size:18px;
+  color: #666;
+
+}
+
+
+
+/* FOOTER */
+.footer {
+  background-color: white;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  padding: 40px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+
+  /* 💫 Ligne de séparation douce et ombre subtile */
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.footer-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+}
+
+.footer-content p {
+  margin: 10px 0;
+  font-size: 0.95rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #e06fe0;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 15px;
+}
+
+.footer-header {
+  display: flex;
+  align-items: center;
+  /* aligne verticalement le logo et le texte */
+  justify-content: center;
+  gap: 12px;
+  /* espace entre le logo et le texte */
+  margin-bottom: 10px;
+}
+
+.footer-title {
+  font-size: 1.3rem;
+  color: #333;
+  margin-top:-17px;
+}
+
+
+.footer-minidesc {
+
+  color: black;
+
+}
