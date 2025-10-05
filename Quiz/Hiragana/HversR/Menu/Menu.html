@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Hiragana vers Romaji</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icone -->
+    <link rel="icon" type="image/png" href="../../../../Images/favicon.jpg">
+    <!-- Font moderne pour les icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg position-relative" style="height: 80px;">
+        <div class="container d-flex align-items-center justify-content-start">
+            <!-- Logo à gauche -->
+            <a class="navbar-brand" href="#">
+                <img src="../../../../Images/Logo.png" alt="Logo" class="logo">
+                <span>NihonJaaj</span>
+            </a>
+
+            <!-- Toggle pour mobile -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <!-- Liens centrés -->
+        <div class="collapse navbar-collapse position-absolute top-50 start-50 translate-middle" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="../../../../index.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../../../Cours/cours.html">Cours</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../../../Flashcards/flashcards.html">Flashcards</a>
+                </li>
+                <li class="nav-item"><a class="nav-link active" href="../../../../Quiz/quiz.html">Quiz</a></li>
+                <li class="nav-item"><a class="nav-link inactive" href="#">Vocabulaire</a></li>
+                <li class="nav-item"><a class="nav-link inactive" href="#">A propos</a></li>
+        </div>
+    </nav>
+
+    <main class="centre-page">
+        <h2>Choisis les lignes de Hiragana à réviser</h2>
+        <p>Tu peux sélectionner une ou plusieurs lignes :</p>
+
+        <div class="lignes-hiragana">
+            <label class="choix-hiragana">
+                <input type="checkbox" value="a">
+                <span>A I U E O</span>
+            </label>
+            <label class="choix-hiragana">
+                <input type="checkbox" value="ka">
+                <span>KA KI KU KE KO</span>
+            </label>
+            <label class="choix-hiragana">
+                <input type="checkbox" value="sa">
+                <span>SA SHI SU SE SO</span>
+            </label>
+            <label class="choix-hiragana">
+                <input type="checkbox" value="ta">
+                <span>TA CHI TSU TE TO</span>
+            </label>
+            <label class="choix-hiragana">
+                <input type="checkbox" value="na">
+                <span>NA NI NU NE NO</span>
+            </label>
+            <label class="choix-hiragana">
+                <input type="checkbox" value="ha">
+                <span>HA HI FU HE HO</span>
+            </label>
+            <label class="choix-hiragana">
+                <input type="checkbox" value="ma">
+                <span>MA MI MU ME MO</span>
+            </label>
+            <label class="choix-hiragana">
+                <input type="checkbox" value="ya">
+                <span>YA YU YO</span>
+            </label>
+            <label class="choix-hiragana">
+                <input type="checkbox" value="ra">
+                <span>RA RI RU RE RO</span>
+            </label>
+            <label class="choix-hiragana">
+                <input type="checkbox" value="wa">
+                <span>WA WO N</span>
+            </label>
+        </div>
+
+        <a href="QuizHversR/HversR.html" id="start-quiz">Commencer le quiz</a>
+        <a href="../../../quiz.html" class="retour-menu">Retour au Menu</a>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-header">
+                <img src="../../../../Images/Logo.png" alt="Logo JaajPanese" class="footer-logo">
+                <span class="footer-title">NihonJaaj</span>
+            </div>
+            <p class="footer-minidesc">Un petit terrain de jeu pour le japonais.</p>
+            <div class="footer-links">
+                <a href="../../../../index.html">Accueil</a>
+                <a href="../../../../Cours/cours.html">Cours</a>
+                <a href="../../../../Flashcards/flashcards.html">Flashcards</a>
+                <a href="../../../../Quiz/quiz.html">Quiz</a>
+                <a href="#">Vocabulaire</a>
+                <a href="#">À propos</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 NihonJaaj. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

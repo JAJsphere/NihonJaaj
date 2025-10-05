@@ -1,0 +1,288 @@
+/*Corps de page*/
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    /* ligne subtile mais visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    /* légère ombre moderne */
+    padding: 1.5rem 0;
+    /* navbar plus grande */
+}
+
+/* Logo */
+.logo {
+    height: 80px;
+    width: 80px;
+}
+
+/* Liens */
+.navbar-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Les onglets */
+.nav-link {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333 !important;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Passage de la souris sur un onglet */
+.nav-link:hover {
+    color: rgb(234, 111, 217) !important;
+    transform: translateY(-3px);
+    /* effet flottant */
+}
+
+/* Liens actifs */
+.nav-link.active {
+    color: rgb(234, 111, 217) !important;
+    border-bottom: 1px solid rgb(234, 111, 217) !important;
+    /* souligne bien le lien actif */
+    padding-bottom: 0.2rem;
+}
+
+/* Conteneur des liens pour les centrer */
+.navbar {
+    height: 80px;
+    /* ajuste selon la taille que tu veux */
+}
+
+/* Liens actifs */
+.nav-link.inactive {
+
+    color: gray;
+
+}
+
+.nav-link.inactive:hover {
+
+    color: gray !important;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+
+
+/* CENTRAGE DE LA PAGE */
+.centre-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* prend toute la hauteur */
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+/* TITRE ET TEXTE */
+.centre-page h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.centre-page p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* LISTE DES LIGNES DE HIRAGANA */
+.lignes-hiragana {
+    display: flex;
+    flex-direction: column; /* vertical */
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.choix-hiragana {
+    position: relative;
+    display: block;
+    width: 300px; /* largeur fixe pour uniformité */
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-weight: 600;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    user-select: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.choix-hiragana span {
+    pointer-events: none;
+    display: block;
+}
+
+/* Checkbox cachée */
+.choix-hiragana input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Case cochée */
+.choix-hiragana input:checked + span {
+    background-color: #e06fe0;
+    color: white;
+    border-radius: 10px;
+    padding: 8px 20px;
+    box-shadow: 0 4px 12px rgba(224, 111, 224, 0.3);
+}
+
+/* Hover */
+.choix-hiragana:hover {
+    border-color: #e06fe0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(224, 111, 224, 0.15);
+}
+
+
+/* BOUTON COMMENCER LE QUIZ */
+#start-quiz {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 15px;
+    background-color: #e06fe0;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#start-quiz:hover {
+    background-color: #d05acc;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(224, 111, 224, 0.3);
+}
+
+/* BOUTON REVENIR AU MENU */
+.retour-menu {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 15px;
+    background-color: #e06fe0;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.retour-menu:hover {
+    background-color: #d05acc;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(224, 111, 224, 0.3);
+}
+
+
+
+
+/* FOOTER */
+.footer {
+    background-color: white;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+
+    /* 💫 Ligne de séparation douce et ombre subtile */
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.footer-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+.footer-content p {
+    margin: 10px 0;
+    font-size: 0.95rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #e06fe0;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 15px;
+}
+
+.footer-header {
+    display: flex;
+    align-items: center;
+    /* aligne verticalement le logo et le texte */
+    justify-content: center;
+    gap: 12px;
+    /* espace entre le logo et le texte */
+    margin-bottom: 10px;
+}
+
+.footer-title {
+    font-size: 1.3rem;
+    color: #333;
+    margin-top: -17px;
+}
+
+
+.footer-minidesc {
+
+    color: black;
+
+}
+
+
+

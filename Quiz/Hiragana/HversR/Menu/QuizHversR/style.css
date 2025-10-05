@@ -1,0 +1,271 @@
+/*Corps de page*/
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    /* ligne subtile mais visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    /* légère ombre moderne */
+    padding: 1.5rem 0;
+    /* navbar plus grande */
+}
+
+/* Logo */
+.logo {
+    height: 80px;
+    width: 80px;
+}
+
+/* Liens */
+.navbar-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Les onglets */
+.nav-link {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333 !important;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Passage de la souris sur un onglet */
+.nav-link:hover {
+    color: rgb(234, 111, 217) !important;
+    transform: translateY(-3px);
+    /* effet flottant */
+}
+
+/* Liens actifs */
+.nav-link.active {
+    color: rgb(234, 111, 217) !important;
+    border-bottom: 1px solid rgb(234, 111, 217) !important;
+    /* souligne bien le lien actif */
+    padding-bottom: 0.2rem;
+}
+
+/* Conteneur des liens pour les centrer */
+.navbar {
+    height: 80px;
+    /* ajuste selon la taille que tu veux */
+}
+
+/* Liens actifs */
+.nav-link.inactive {
+
+    color: gray;
+
+}
+
+.nav-link.inactive:hover {
+
+    color: gray !important;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+
+.centre-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.lignes-hiragana label {
+    display: block;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+
+
+
+
+button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #e06fe0;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #d05acc;
+}
+
+.quiz-box {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    min-width: 300px;
+}
+
+.hiragana-char {
+    font-size: 5rem;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.quiz-controls {
+    display: flex;
+    flex-direction: column; /* empile les lignes verticalement */
+    align-items: center;
+    gap: 10px;
+}
+
+/* Ligne pour Valider + Reset */
+.quiz-btns {
+    display: flex;
+    gap: 10px;
+}
+
+/* Bouton retour plus petit et centré */
+.btn-retour {
+    padding: 8px 16px; /* plus petit que Valider/Reset */
+    margin: 0;
+    background-color: #e06fe0;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.btn-retour:hover {
+    background-color: #d05acc;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+    background-color: white;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+
+    /* 💫 Ligne de séparation douce et ombre subtile */
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.footer-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+.footer-content p {
+    margin: 10px 0;
+    font-size: 0.95rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #e06fe0;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 15px;
+}
+
+.footer-header {
+    display: flex;
+    align-items: center;
+    /* aligne verticalement le logo et le texte */
+    justify-content: center;
+    gap: 12px;
+    /* espace entre le logo et le texte */
+    margin-bottom: 10px;
+}
+
+.footer-title {
+    font-size: 1.3rem;
+    color: #333;
+    margin-top: -17px;
+}
+
+
+.footer-minidesc {
+
+    color: black;
+
+}
+
+
+

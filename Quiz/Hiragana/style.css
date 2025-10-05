@@ -1,0 +1,283 @@
+/*Corps de page*/
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    /* ligne subtile mais visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    /* légère ombre moderne */
+    padding: 1.5rem 0;
+    /* navbar plus grande */
+}
+
+/* Logo */
+.logo {
+    height: 80px;
+    width: 80px;
+}
+
+/* Liens */
+.navbar-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Les onglets */
+.nav-link {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333 !important;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Passage de la souris sur un onglet */
+.nav-link:hover {
+    color: rgb(234, 111, 217) !important;
+    transform: translateY(-3px);
+    /* effet flottant */
+}
+
+/* Liens actifs */
+.nav-link.active {
+    color: rgb(234, 111, 217) !important;
+    border-bottom: 1px solid rgb(234, 111, 217) !important;
+    /* souligne bien le lien actif */
+    padding-bottom: 0.2rem;
+}
+
+/* Conteneur des liens pour les centrer */
+.navbar {
+    height: 80px;
+    /* ajuste selon la taille que tu veux */
+}
+
+/* Liens actifs */
+.nav-link.inactive {
+
+    color: gray;
+
+}
+
+.nav-link.inactive:hover {
+
+    color: gray !important;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+
+
+
+.quiz-menu {
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.quiz-menu h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.quiz-menu p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* --- Grille de cartes --- */
+.cartes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* exactement 2 colonnes */
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* centre la grille */
+}
+
+/* --- Carte --- */
+.carte {
+    min-height: 180px;
+    /* ajustable selon ce que tu veux */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 25px 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+}
+
+.carte h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.carte p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* --- Icône --- */
+.carte .icone {
+    font-size: 1.8rem;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e06fe0, #ff7bc1);
+    /* violet → rose */
+    color: white;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* --- Cartes actives --- */
+.carte.activee:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Cartes désactivées --- */
+.carte.desactivee {
+    background: #f0f0f0;
+    color: #aaa;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.carte.desactivee p,
+.carte.desactivee h2 {
+    opacity: 0.7;
+}
+
+/* --- Animation d'apparition --- */
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.carte {
+    animation: apparition 0.4s ease forwards;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+    .cartes {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+    background-color: white;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+
+    /* 💫 Ligne de séparation douce et ombre subtile */
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.footer-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+.footer-content p {
+    margin: 10px 0;
+    font-size: 0.95rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #e06fe0;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 15px;
+}
+
+.footer-header {
+    display: flex;
+    align-items: center;
+    /* aligne verticalement le logo et le texte */
+    justify-content: center;
+    gap: 12px;
+    /* espace entre le logo et le texte */
+    margin-bottom: 10px;
+}
+
+.footer-title {
+    font-size: 1.3rem;
+    color: #333;
+    margin-top: -17px;
+}
+
+
+.footer-minidesc {
+
+    color: black;
+
+}
